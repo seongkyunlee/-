@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Sumin</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background: #fda085;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin: 10px;
+        }
+
+        button:hover {
+            background: #f6d365;
+        }
+
+        .heart {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 200px;
+            color: rgba(255, 255, 255, 0.8);
+            animation: float 4s infinite ease-in-out;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translate(-50%, 0);
+            }
+            50% {
+                transform: translate(-50%, -20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">❤️</div>
+    <div class="container">
+        <h1>To Sumin</h1>
+        <p>수민 대장, 솔직히 말할께...많은 궁금증 중 하나! ,이제 확실한 사이에서 <br> 영화보고 밥먹고. <br> 시작할래, 어때?</p>
+        <button onclick="replyYes()">YES</button>
+        <button onclick="replyNo()">NO</button>
+    </div>
+
+    <script>
+        function replyYes() {
+            alert('수민아! 네 대답이 정말 행복하게 만들었어!  ❤️');
+        }
+
+        function replyNo() {
+            alert('이 선택이면 나랑 함께할 수백 가지 행복한 혜택을 누리지 못하게 돼! 😢');
+        }
+    </script>
+</body>
+</html>
